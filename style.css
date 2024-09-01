@@ -27,7 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding: 28px;
+    padding: 24px;
     width: 320px;
     border-radius: 10px;
     background: var(--container);
@@ -40,7 +40,10 @@ img {
 }
 
 .name {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    gap: 8px;
 }
 
 .name h1 {
@@ -49,7 +52,31 @@ img {
 }
 
 .name p {
-    font-size: 16px;
     color: var(--text-green);
 }
 
+.metadata {
+    font-size: 14px;
+    color: hsl(0, 0%, 80%);
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.links-1, .links-2, .links-3, .links-4 {
+    text-align: center;
+    padding: 12px 8px;
+    border-radius: 8px;
+    background: var(--links);
+}
+
+a {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text-white);
+}
