@@ -70,8 +70,18 @@ img {
 .links-1, .links-2, .links-3, .links-4 {
     text-align: center;
     padding: 12px 8px;
+    transition: background 0.2s;
     border-radius: 8px;
     background: var(--links);
+}
+
+.links-1:hover, .links-2:hover, .links-3:hover, .links-4:hover {
+    background: var(--text-green);
+    
+
+    a {
+        color: var(--bg);
+    }
 }
 
 a {
